@@ -27,7 +27,7 @@ npm run dev
 
 ## Deploy
 
-O projeto é publicado via GitHub Pages usando o branch `gh-pages`.
+O projeto é publicado via GitHub Pages usando o branch `gh-pages`. (https://knunesth.github.io/clinica-psicologica)
 
 ```bash
 npm run build
