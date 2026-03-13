@@ -1,0 +1,117 @@
+.testimonials {
+  padding: var(--section-py) 0;
+  background: var(--sage-50);
+}
+
+.testimonials__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.testimonials__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonials__nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--sage-200);
+  color: var(--sage-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.testimonials__nav-btn:hover {
+  background: var(--sage-500);
+  color: #fff;
+  border-color: var(--sage-500);
+}
+
+.testimonials__track {
+  overflow: hidden;
+}
+
+.testimonials__slider {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonials__card {
+  min-width: calc(33.333% - 16px);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+}
+
+.testimonials__card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--sage-100);
+}
+
+.testimonials__quote {
+  color: var(--sage-400);
+  margin-bottom: 16px;
+}
+
+.testimonials__text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.testimonials__stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.testimonials__author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 16px;
+  border-top: 1px solid var(--sage-100);
+}
+
+.testimonials__author-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+.testimonials__author-time {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 968px) {
+  .testimonials__card {
+    min-width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 580px) {
+  .testimonials__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .testimonials__card {
+    min-width: 100%;
+  }
+}

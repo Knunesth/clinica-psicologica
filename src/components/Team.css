@@ -1,0 +1,104 @@
+.team {
+  padding: var(--section-py) 0;
+  background: #fff;
+}
+
+.team__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team__header .section-tag {
+  justify-content: center;
+}
+
+.team__header .section-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.team__card {
+  background: var(--warm-white);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+}
+
+.team__card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--sage-100);
+}
+
+.team__card-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: transform var(--transition-bounce);
+}
+
+.team__card:hover .team__card-avatar {
+  transform: scale(1.08);
+}
+
+.team__card-avatar span {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team__card-name {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.team__card-specialty {
+  font-size: 0.85rem;
+  color: var(--sage-500);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.team__card-crp {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--text-light);
+  background: var(--sage-50);
+  padding: 3px 10px;
+  border-radius: var(--radius-xl);
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.team__card-bio {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 968px) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+}
